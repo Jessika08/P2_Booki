@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+     box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
+body {
+     font-family: 'Raleway', sans-serif;
+     margin: auto !important;
+     max-width: 1500px;
+     min-width: 295px;
+}
+
+.logonav {/*le logo et le menu nav sont disposé en debut et fin de la même  ligne */
+
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-left: 35px;
+}
+
+.Logo { /*dimension du logo*/
+    width: 100px;
+    margin-top: 25px;
+}
+
+.logonav ul {
+    list-style-type: none; /*pour supprimer les puces de la liste nav*/
+    display: flex;
+    justify-content : flex-end;
+    margin: unset;
+}
+
+.logonav nav li {     /*espacement entre hébergements et activités de la nav*/
+
+    margin: 0 30px;
+    padding-top: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logonav nav li:hover { /* bordure survol de la nav*/
+    border-top: #0065fc 2px solid; 
+}
+
+.logonav li a:hover { /* couleur survol de la nav*/
+    color: #0065fc;
+}
+
+.logonav li a {   /*pour supprimer le soulignement des liens nav*/
+    text-decoration: none;
+    color: black;
+}
