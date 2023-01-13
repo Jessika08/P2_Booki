@@ -12,11 +12,16 @@ body {
      min-width: 295px;
 }
 
+.main { /*marges appliquées le contenu principal du body*/
+    margin-left:35px;     
+    margin-right:35px;
+}
+
 .logonav {/*le logo et le menu nav sont disposé en debut et fin de la même  ligne */
 
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
     padding-left: 35px;
 }
 
@@ -35,9 +40,10 @@ body {
 .logonav nav li {     /*espacement entre hébergements et activités de la nav*/
 
     margin: 0 30px;
-    padding-top: 35px;
+    padding-top: 33px;
     padding-left: 15px;
     padding-right: 15px;
+    border-top: solid 2px transparent;
 }
 
 .logonav nav li:hover { /* bordure survol de la nav*/
@@ -51,4 +57,135 @@ body {
 .logonav li a {   /*pour supprimer le soulignement des liens nav*/
     text-decoration: none;
     color: black;
+}
+
+.titre { 
+    font-size: 18px;
+}
+
+.rechercher { /* bouton bleu rechercher dans sa version desktop*/
+    color: white; /* couleur de rechercher*/
+    background-color: #0065fc; /* la couleur de fond du bouton submit*/
+    padding: 12px 10px 12px 10px; /* taille du bouton submit*/
+    border-radius: 0 15px 15px 0; /* arrondis des angles du bouton submit*/
+    border: 0px; /* pour supprimer le couton noir du bouton submit*/
+    position: relative;
+    left: -4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.rechercher i{ /*masque l'icône présente en responsive*/
+    display:none;
+    
+}
+
+.location { /* champs de recherche*/
+    height: 42px; /* taille du champ de recherche */ 
+    position:relative;
+    border: #F2F2F2 1px solid;
+    padding-left: 12px;
+}
+
+.location::placeholder { /*Marseille,France dans le champs de recherche*/
+    color:black;
+    font-weight: bold;
+}
+
+.formulaire-recherche{ /* style de l'ensemble du formulaire de recherche icône map +champ de recherche +bouton rechercher*/
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.map {
+    color: black;
+    padding: 11px ;
+    border: #F2F2F2 solid 2px;
+    border-radius: 15px 0 0 15px;
+    background: #F2F2F2;
+
+}
+
+.filtres{
+    display: flex;
+    font-weight: bold;
+}
+
+.filtres p{ /* le mot "filtres" à coté des filtres*/
+    padding-right: 40px; 
+}
+
+.filters-bubble{  /*concerne les filtres*/
+    display: flex;
+}
+
+.filtres label{ /*le nom de chaque filtres*/
+    
+border:#F2F2F2  solid 2px;
+padding: 0px 15px 0px 5px;
+border-radius: 35px;
+margin-right: 20px;
+margin-bottom:15px;
+display: flex;
+align-items: center;
+height: 45px;
+min-width: fit-content;
+cursor: pointer;
+transition: transform 0.5s ease; 
+}
+
+.filtres i{ /* les icônes dans chaque filtres */
+    color: #0065fc;
+    margin-left: -7px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+     /*effets hover sur les filtres*/
+     .filtres label:hover, .filtres input:checked + label {
+        background-color: #deebff ;
+       /* transform:translate(-12px,-12px);*/
+        opacity: 0.9;
+        
+   } 
+   
+   /*.filtres label:hover::after{
+        transform:translate(6px,6px)
+   }
+   
+   .filtres label:hover::before{
+        transform:translate(12px,12px)       
+   }*/
+
+   input[type="checkbox"] { 
+    display: none;
+}
+
+.infos{/* phrase d'information avec l'icônes i"*/
+    display:flex;
+}
+
+.infos i{ /* style des icônes de chaque filtre */
+    color: #0065fc;
+    font-size: 11px;
+    border: #F2F2F2 solid 1px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+    
+.info-quote{ /* concerne la phrase d'infos seule*/
+    margin: 15px;
+    padding-top: 5px;
+    font-weight: normal;
 }

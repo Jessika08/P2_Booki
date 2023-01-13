@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/booki.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/booki.css">
     <script src="https://kit.fontawesome.com/6a0390c8f4.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
 <body>
     <header> 
         <div class="logonav">
-            <img src="assets/logo/Booki@3x.png" alt="Logo Booki" class="Logo">    
+            <img src="assets/logo/Booki.png" alt="Logo Booki" class="Logo">    
             <nav>
                 
                 <ul>
@@ -21,9 +21,55 @@
                     <li><a href="#ancre-activites">Activités</a></li>
                 
                 </ul>
+
             </nav>
          </div>
     </header>  
+    <main class="main">
+
+        <div class="intro">
+            <h1 class="titre">Trouvez votre hébergement pour des vacances de rêves</h1> 
+            <p>En plein centre ville ou en pleine nature</p>
+
+        
+            <form method="post" action="#" class="formulaire-recherche">
+                
+                <label for="location"><i class="fas fa-map-marker-alt map"></i></label>
+                <input type="search" name="location" id="location" class="location" placeholder="Marseille,France" />
+                <button type="submit" class="rechercher">
+                <i class="fas fa-search"></i>
+                <span>Rechercher</span>
+                </button>
+        
+            </form>
+
+            <form method="post" action="#" class="filtres" >
+
+                <p>Filtres</p>
+
+                <div class="filters-bubble">
+
+                    <input type="checkbox" name="eco" value="Économique" id="eco" class="eco"/>
+                    <label for="eco"><i class="fas fa-money-bill-wave"></i>Économique</label> 
+                
+                    <input type="checkbox" name="familial" value="Familial" id="familial" class="familial" />
+                    <label for="familial"> <i class="fas fa-child"></i>Familial</label> 
+
+                    <input type="checkbox" name="romantique" value="Romantique" id="romantique" class="romantique" />
+                    <label for="romantique"><i class="fas fa-heart"></i>Romantique</label> 
+                    
+                    <input type="checkbox" name="animaux" value="Animaux autorisés" id="animaux" class="animaux" />
+                    <label for="animaux"> <i class="fas fa-dog"></i>Animaux autorisés</label> 
+                </div>    
+            
+            </form> 
+
+            <div class="infos">
+                <p><i class="fas fa-info"></i></p> <p class="info-quote"> Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </div>    
+
+    </main>
     
 </body>
 </html>
