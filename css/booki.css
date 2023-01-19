@@ -206,7 +206,8 @@ transition: transform 0.5s ease;
     margin-top: 20px;
     margin-right: 40px;
     padding: 2%;
-    margin-bottom:15px
+    margin-bottom:15px;
+    width: 68%;
 }
 
 .section-1 h3{/* agit sur les titres H3 de la partie "Hebergements à Marseille*/
@@ -298,4 +299,103 @@ transition: transform 0.5s ease;
 
 .show_more{ /* concerne le lien "Afficher plus" en bas de la partie "Hébergements à Marseille"*/
     margin-top: 25px;
+}
+
+.section-2{ /* classe qui englobe toute la partie "Les plus populaires"*/
+    border: #f2f2f2 solid 1px;
+    border-radius: 22px;
+    background-color: #f2f2f2; 
+    margin-top: 20px;
+    padding:2%;
+    margin: bottom 15px;
+    width: 30%;
+}
+
+.populaires{ /* concerne le titre de la  partie "Les plus populaires*/
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.section-2 h3{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top:10px;
+    text-align:left;
+    margin: unset;
+}
+
+.card-section-2{ /* style général qui vise toutes les cartes de la partie "les plus populaires"*/
+    width: 325px;
+    height:135px;
+    background-color:rgb(248, 246, 246);                
+    text-decoration:none;
+    border-radius: 22px;
+    box-shadow: 0px 10px 15px 5px rgb(228, 227, 227);
+    margin-bottom: 10%;
+    margin-top: 10px;
+    
+}
+
+
+.card-section-2 a { /* liens de la partie "les plus populaires" : toutes les cartes de la section sont cliquables */
+    color:black;
+    text-decoration:none;
+    font-weight: normal;
+    font-size: 5px;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.card-section-2-image img { /* style général qui vise toute les images des cartes de la section-2*/
+    width: 140px;;
+    height:130px;
+    border-radius: 22px 0px 0px 22px;
+    display: block;
+    margin: 0px 0px 0px 5px;
+    padding-top: 5px;
+    object-fit: cover;
+}
+
+.card-section-2-body { /* style général qui vise toute les corps des cartes de la section-2*/
+    font-size: 10px;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column; 
+    justify-content: space-between;
+    padding: 0px 5px; 
+    box-sizing: border-box; 
+    width:42%;
+    margin-left: 10px;
+}
+
+.card-section-2-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+                                   
+.card-section-2-title{/* style général qui vise toute les titre des cartes de la section-2*/
+    text-align:center;
+    font-weight: bold;
+}
+
+.card-section-2-price{/* style général qui vise toute les ligne prix des cartes de la section-2*/
+    text-align:center;
+}
+
+.card-section-2-price p{
+    margin:unset;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.card-section-2-reviews{/* style général qui vise toute les évaluations en étoiles des cartes de la section-2*/
+    text-align:center;
+    font-weight: bold;
+    color:#0065fc;
+    font-size: 11px;     
 }
