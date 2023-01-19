@@ -189,3 +189,113 @@ transition: transform 0.5s ease;
     padding-top: 5px;
     font-weight: normal;
 }
+
+.bold-price { /*les éléments de prix en gras */
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.gray-star { /* classe concernant les étoiles grises dans les notes */
+    color:#acabab;
+}
+
+.section-1{ /*concerne la partie "Hébergements à Marseille"*/
+    border: #f2f2f2 solid 1px;
+    border-radius: 22px;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    margin-right: 40px;
+    padding: 2%;
+    margin-bottom:15px
+}
+
+.section-1 h3{/* agit sur les titres H3 de la partie "Hebergements à Marseille*/
+    font-size: 14px;
+    font-weight: bold;
+    margin:unset;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.cards-section-1{ /* classe qui vise les cartes à l'interieur de la partie "Hébergements à Marseille"*/
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-section-1{ /* style de chaque cartes de la section-1"*/
+    width: 30%;
+    height:190px;
+    background-color:rgb(248, 246, 246);
+    text-decoration:none;
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px 5px rgb(228, 227, 227);
+    margin: 13px;
+    min-width: 185px
+}
+
+.card-section-1 i{ /* style sur les icônes étoiles de la section-1"*/
+    font-size: 12px;
+}
+
+.section-1 h2 a{ /*lien , titre h2 de la  partie "hébergement à Marseille" cliquables" */
+    color:black;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.card-section-1 a {/* liens de la partie "hebergements à Marseille" : toutes les cartes de la section sont cliquables */
+    color:black;
+    text-decoration:none;
+    font-weight: normal;
+    font-size: 5px;
+}
+
+.card-section-1-image img { /* style général qui vise toute les images des cartes de la section-1*/
+    width: 100%;
+    height:114px;
+    border-radius: 15px 15px 0px 0px;
+    display: block;
+    padding: 5px;
+    object-fit:cover;
+}
+
+.card-section-1-body { /* style général qui vise toute les corps des cartes de la section-1*/
+    font-size: 14px;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column; 
+    padding: 0px 15px; 
+    box-sizing: border-box; 
+}
+
+.card-section-1-price p{/* style général qui vise toute les paragraphes prix des cartes de la section-1*/
+    margin:unset;
+}
+
+.card-section-1-title, .card-section-1-reviews {/* style général qui vise tout les titres et avis des cartes de la section-1*/
+    font-weight: bold;
+}
+
+
+.card-section-1-reviews{
+    color:#0065fc;
+}
+
+.card-section-1-reviews p{
+    margin: unset;
+    padding-top: 5px;
+}
+
+         
+
+.afficher_plus{ /* concerne le lien "Afficher plus" en bas de la partie "Hébergements à Marseille"*/
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black                   
+}
+
+.show_more{ /* concerne le lien "Afficher plus" en bas de la partie "Hébergements à Marseille"*/
+    margin-top: 25px;
+}
