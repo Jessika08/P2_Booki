@@ -355,7 +355,7 @@ h2{
     justify-content: flex-start;
 }
 
-.card-section-2-image img { /* style général qui vise toute les images des cartes de la section-2*/
+.card-section-2-image img { /*style général qui vise toute les images des cartes de la section-2*/
     width: 140px;;
     height:130px;
     border-radius: 22px 0px 0px 22px;
@@ -403,6 +403,95 @@ h2{
     font-weight: bold;
     color:#0065fc;
     font-size: 11px;     
+}
+
+.section-3 a { /* liens de la partie "activités à Marseille" : toutes les cartes de la section sont cliquables */
+    text-decoration: none;/*supprime le soulignement les liens de la section 3*/
+    color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cards-section-3{/* style général qui vise toute cartes de la section-3*/
+    height: 475px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card{
+    background-color: white;
+    border-radius: 22px;
+    box-shadow: 0px 10px 15px 5px rgb(228 227 227);
+}
+
+.card img{
+    object-fit: cover;
+    border-radius: 22px 22px 0 0 ;
+    height: 100%;
+    width: 100%;
+} 
+
+
+.card-section-3-image{
+
+    height: calc(100% - 50px) ;
+}
+
+.card-section-3-body{/* style général qui vise tout les corps des cartes de la section-3*/
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.cards-section-3 h3 {
+
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    padding: 0px 0px 0px 15px;
+    margin: unset;
+}
+
+.card-section-3{
+width: 23%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+    
+.card-section-3-XL{
+    height: 100%;                    
+}
+
+footer {/*pied de page*/
+    display: flex;
+    background-color: #F2F2F2;  
+    margin-left: 35px;  
+    margin-right: 35px;       
+}
+
+footer h4{
+    margin-bottom: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.a_propos, .nos_hebergements, .assistance{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+    width: 33%;      
 }
 
 
