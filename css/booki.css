@@ -190,6 +190,11 @@ transition: transform 0.5s ease;
     font-weight: normal;
 }
 
+.hebergements-pop{ /*block qui englobe la section-1 et la section-2*/
+    display:flex;
+    justify-content: space-between;
+}
+
 .bold-price { /*les éléments de prix en gras */
     font-weight: bolder;
     font-size: 12px;
@@ -399,3 +404,5 @@ h2{
     color:#0065fc;
     font-size: 11px;     
 }
+
+
