@@ -7,8 +7,8 @@
 
 body {
      font-family: 'Raleway', sans-serif;
-     margin: auto !important;
-     max-width: 1500px;
+     margin: auto;
+     max-width: 1400px;
      min-width: 295px;
 }
 
@@ -193,6 +193,7 @@ transition: transform 0.5s ease;
 .hebergements-pop{ /*block qui englobe la section-1 et la section-2*/
     display:flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 .bold-price { /*les éléments de prix en gras */
@@ -201,7 +202,7 @@ transition: transform 0.5s ease;
 }
 
 .gray-star { /* classe concernant les étoiles grises dans les notes */
-    color:#acabab;
+    color:#f2f2f2;
 }
 
 .section-1{ /*concerne la partie "Hébergements à Marseille"*/
@@ -210,9 +211,7 @@ transition: transform 0.5s ease;
     background-color: #f2f2f2;
     margin-top: 20px;
     margin-right: 40px;
-    padding: 2%;
-    margin-bottom:15px;
-    width: 68%;
+    padding: 2% 2% 3% 2%;
 }
 
 .section-1 h3{/* agit sur les titres H3 de la partie "Hebergements à Marseille*/
@@ -247,7 +246,7 @@ transition: transform 0.5s ease;
 .section-1 h2 a{ /*lien , titre h2 de la  partie "hébergement à Marseille" cliquables" */
     color:black;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .card-section-1 a {/* liens de la partie "hebergements à Marseille" : toutes les cartes de la section sont cliquables */
@@ -299,7 +298,8 @@ transition: transform 0.5s ease;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-    color: black                   
+    color: black;  
+    margin-left: 15px;               
 }
 
 .show_more{ /* concerne le lien "Afficher plus" en bas de la partie "Hébergements à Marseille"*/
@@ -311,9 +311,8 @@ transition: transform 0.5s ease;
     border-radius: 22px;
     background-color: #f2f2f2; 
     margin-top: 20px;
-    padding:2%;
-    margin: bottom 15px;
-    width: 30%;
+    padding:2% 2% 0% 2%;
+    height: fit-content;
 }
 
 .populaires{ /* concerne le titre de la  partie "Les plus populaires*/
@@ -323,6 +322,10 @@ transition: transform 0.5s ease;
 
 h2{
     font-size: 20px;
+}
+
+.section-2 i{
+    color:#0065fc;
 }
 
 .section-2 h3{
@@ -472,7 +475,8 @@ footer {/*pied de page*/
     display: flex;
     background-color: #F2F2F2;  
     margin-left: 35px;  
-    margin-right: 35px;       
+    margin-right: 35px;
+    padding-bottom: 35px     
 }
 
 footer h4{
@@ -483,6 +487,7 @@ footer a{
     text-decoration: none;
     color: black;
     padding: 5px;
+    padding: 5px 5px 5px 0px;
 }
 
 .a_propos, .nos_hebergements, .assistance{
@@ -490,7 +495,7 @@ footer a{
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 5px;
-    padding-left: 35px;
+    padding-left: 60px;
     width: 33%;      
 }
 
