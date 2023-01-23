@@ -133,7 +133,6 @@ align-items: center;
 height: 45px;
 min-width: fit-content;
 cursor: pointer;
-transition: transform 0.5s ease; 
 }
 
 .filtres i{ /* les icônes dans chaque filtres */
@@ -500,3 +499,84 @@ footer a{
 }
 
 
+
+/******************RESPONSIVE VERSION TABLETTE*******************/
+
+@media screen and (max-width: 992px ){
+
+        header{
+            margin-right: 5px;
+            margin-left: 15px;
+        }
+
+        .main {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        .filters-bubble{  
+            flex-wrap: wrap;
+       }
+       
+        .hebergements-pop{
+            flex-wrap: wrap;
+        }
+
+        .section-1{
+            margin-right: unset;
+        }
+
+        .section-2{
+            width: 100%;
+            padding: 2% 2% 3% 2%;
+        }
+
+        .populaires {
+            margin-left: 20px;
+        }
+
+        .populaires i{
+            padding-right: 15px;
+        }
+
+        .cards-section-2{
+            display: flex;
+            flex-direction: row; 
+        }
+
+        .card-section-2{
+            margin: 10px 15px 10px 15px;
+            width: 255px;
+            height: 145px;
+        }
+
+        .card-section-2-image img {
+            width: 90px;
+            height: 140px;
+        }
+
+        .card-section-2-body{
+            width: 51%;
+        }
+
+        .card-section-2-reviews p{
+            margin-bottom: 5px;
+        }
+
+
+        .cards-section-3{
+            height: 270px;
+        }
+
+        .card-section-3{
+            width: 21%;
+        }
+
+        footer{
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        
+}
+
+/****************** RESPONSIVE VERSION MOBILE**********************/
