@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;500;600;700;800;900&display=swap');
+
+/*('https://fonts.googleapis.com/css2?family=Raleway&display=swap');*/
+
 * {
      box-sizing: border-box; /* Opera/IE 8+ */
     -moz-box-sizing: border-box; /* Firefox, autres Gecko */
@@ -526,11 +529,6 @@ footer a{
             margin-right: unset;
         }
 
-        .section-2{
-            width: 100%;
-            padding: 2% 2% 3% 2%;
-        }
-
         .populaires {
             margin-left: 20px;
         }
@@ -539,6 +537,10 @@ footer a{
             padding-right: 15px;
         }
 
+        .section-2{
+            width: 100%;
+            padding: 2% 2% 3% 2%;
+        }
         .cards-section-2{
             display: flex;
             flex-direction: row; 
@@ -580,3 +582,197 @@ footer a{
 }
 
 /****************** RESPONSIVE VERSION MOBILE**********************/
+
+@media screen and (max-width: 768px ){
+    
+
+    header{
+        margin:unset;
+    }
+
+   
+    .main{
+        margin: unset;
+        overflow: scroll;
+    }
+
+   /*new*/
+   .Logo{
+     width: 120px;
+     margin-top: 35px;
+     padding-bottom: 40px;
+   }
+
+   .logonav {
+        flex-direction: column;
+        align-items: center;
+        padding-left:unset;  
+   }
+
+   .logonav nav{
+        width: 100%;
+   }
+
+   .logonav ul {
+        padding: unset;
+        justify-content: space-between; 
+        font-size: 20px;  
+   }
+
+   .logonav nav li{
+        margin: unset;
+        text-align:center;
+        width:50%;
+        padding-bottom:30px;
+        border-bottom: #f2f2f2 5px solid;
+        
+   }
+
+   .logonav nav li:hover { /* bordure survol de la nav*/
+        border-bottom: #0065fc 5px solid; 
+        border-top: unset;
+   }
+
+   .titre{
+    font-size: 45px;
+   }
+
+   .intro{
+        margin-left: 35px;
+        margin-right: 35px;
+   }
+
+    .intro p{
+        font-size: 33px;
+    }
+
+    .location{
+        width: 80%;
+    }
+
+
+   .filtres{
+        flex-wrap: wrap;
+   }
+
+   .filtres p {
+        padding-bottom: 25px;
+   }
+
+   .filters-bubble{
+    width:400px
+   }
+
+   .rechercher{
+        border-radius: 0px 15px 15px 0px;
+        width: 42px;
+        position:absolute;
+        left: 80%;
+        }         
+     
+   .rechercher span{
+        display:none;
+   }
+
+   .rechercher i {
+        display: unset; 
+
+   }
+
+    .location::placeholder{
+        font-size: 20px;
+    }
+
+   .hebergements-pop{
+        display:flex;
+        flex-direction: column-reverse;
+   }
+
+
+   .section-1{
+        background-color: unset;
+        border: unset;
+        height: auto;
+        margin: unset;
+        padding: unset;
+   }
+
+   .section-1 h2 a{
+        margin-left: 3%;
+   }
+
+   .card-section-1{
+        width: 100%;
+        max-width: 370px;
+        margin: 13px 0px;
+   }
+
+    .section-2{
+            border-radius:unset;
+            height: auto;
+            padding: unset;
+    }
+
+   .cards-section-2, .cards-section-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+  
+   
+   .card-section-2{
+        width: 95%;
+        margin: 5px;
+   }
+
+   .card-section-2-image img{
+        width: 125px;
+   }
+
+   .populaires{
+    margin-left: 3%;
+   }
+
+   .show_more .afficher_plus{
+        display: none;
+   }
+
+   .section-3 h2{
+        margin-left: 3%;
+        max-width: 100px;
+   }
+
+   .card-section-3 {
+        max-width: 370px;
+        width: 100%; 
+        height: unset; 
+        margin-bottom: unset;       
+   } 
+
+   .cards-section-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+   }
+
+   .card{
+        height: 208px;
+        margin-bottom: 20px;
+   }
+
+   footer{
+     display: flex;
+     flex-direction: column;
+     padding-left: 35px;
+     margin: unset; 
+   }
+
+   .a_propos, .nos_hebergements, .assistance{
+        width: 100%;
+        padding-left: unset;
+   }
+
+ 
+}
+
